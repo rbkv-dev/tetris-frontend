@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const StyledFieldWrapper = styled.div`
-  height: fit-content;
-  width: 200px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  overflow: hidden;
+  & > div {
+    height: 400px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transform: translate(0, -60px);
+  }
 `;
 
 export const StyledCell = styled.div`
